@@ -138,7 +138,7 @@ var ClusterManager = function (clusterName, selfId, spec) {
                        port: worker_info.info.port || 0,
                        keepAlive: workers[worker].alive_count});
             } else {
-                on_ok(info);
+                on_ok(worker_info);
             }
         } else {
             on_error('Worker [' + worker + '] does NOT exist.');
